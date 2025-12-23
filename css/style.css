@@ -1,12 +1,13 @@
 body {
-  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 15px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #333;
 }
 
 a {
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   text-decoration: none;
   color: #1ca9e3;
 }
@@ -17,8 +18,6 @@ img {
   vertical-align: bottom;
   border-style: none;
 }
-
-
 
 .pc-only {
   display: block;
@@ -58,7 +57,7 @@ img {
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #333;
 }
 
@@ -77,7 +76,7 @@ img {
   z-index: 1;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .header .container {
@@ -92,15 +91,15 @@ img {
   font-weight: bold;
   line-height: 1.2;
   margin-right: 20px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .header-logo a {
   color: #333;
 }
-.header-logo a:hover{
+.header-logo a:hover {
   color: #999;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 .gnav-list {
   display: flex;
@@ -118,26 +117,25 @@ img {
   font-weight: bold;
   display: inline-block;
   padding: 5px 30px;
-  transition: .3s;
-  letter-spacing: .05em;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
   color: #333;
 }
 
-
-.gnav-item a{
+.gnav-item a {
   position: relative;
-  transition: all .7s;
+  transition: all 0.7s;
 }
 
 .gnav-item a::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   bottom: 0;
   left: 0;
   width: 0;
   height: 1px;
-  background:#0481A2;
+  background: #0481a2;
   opacity: 0;
 }
 
@@ -145,11 +143,10 @@ img {
 .gnav li a:hover::after {
   width: 100%;
   opacity: 1;
-  animation:bgappear 0.5s forwards;
+  animation: bgappear 0.5s forwards;
 }
 
-
-@keyframes bgappear{
+@keyframes bgappear {
   0% {
     width: 0%;
     height: 1px;
@@ -166,7 +163,7 @@ img {
 }
 
 .gnav li.current a,
-.gnav li a:hover{
+.gnav li a:hover {
   color: #fff;
   z-index: 1;
 }
@@ -191,14 +188,14 @@ img {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 5px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
 
 .mv-text {
@@ -217,14 +214,13 @@ img {
 
 .works-item {
   width: 31.74603%;
-  margin-right: 1.58730%;
+  margin-right: 1.5873%;
   margin-bottom: 40px;
   color: #333;
 }
 
-
 .works-item:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .works-item:nth-of-type(3n) {
@@ -251,13 +247,13 @@ img {
   margin: 0 auto;
   text-align: center;
   margin-top: 60px;
-  width:300px;
-  height:60px;
-  }
+  width: 300px;
+  height: 60px;
+}
 .graphic_design:hover {
-    opacity: .9;
-    transition: opacity .3s;
-  }
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
 
 .graphic_design p {
   position: absolute;
@@ -265,17 +261,16 @@ img {
   font-size: 24px;
   line-height: 1;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
   white-space: nowrap;
-  }
-
+}
 
 .js-animation {
   opacity: 0;
@@ -369,27 +364,27 @@ img {
 .contact-text {
   margin-top: 10px;
 }
-.contact-img{
-	vertical-align: middle;
-	display: inline-block;
+.contact-img {
+  vertical-align: middle;
+  display: inline-block;
 }
-.contact-item{
-	display: inline-block;
+.contact-item {
+  display: inline-block;
 }
 .contact section a {
   position: relative;
   display: inline-block;
-  transition: .3s;
+  transition: 0.3s;
 }
 .contact section a::after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  content: '';
+  content: "";
   width: 0;
   height: 1px;
   background-color: #2ecc71;
-  transition: .3s;
+  transition: 0.3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -400,54 +395,51 @@ img {
  ページトップ
 ---------------------------------*/
 
-.page-top{
-    display: block;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 100px auto;
-    border: 2px solid #86868b;
-    border-radius: 50%;
-    text-indent: -9999px;
+.page-top {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 100px auto;
+  border: 2px solid #86868b;
+  border-radius: 50%;
+  text-indent: -9999px;
 }
 
 .page-top a {
-    -webkit-transform: translate(-50%,-50%) rotate(
-45deg);
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 16px;
-    height: 16px;
-    margin: 5px 0 0;
-    border-top: 2px solid #86868b;
-    border-left: 2px solid #86868b;
-    content: "";
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 0;
+  border-top: 2px solid #86868b;
+  border-left: 2px solid #86868b;
+  content: "";
 }
-.page-top:hover{
+.page-top:hover {
   border: 2px solid #fff;
   background: #333;
   transition-duration: 0.5s;
-  
 }
 .page-top a:hover {
-	-webkit-transform: translate(-50%,-50%) rotate(
-45deg);
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 16px;
-    height: 16px;
-    margin: 5px 0 0;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    content: "";
-	transition-duration: 0.3s;
-	top: 0.7rem;
-	transform: translate(-50%,-50%) rotate(45deg);
-    transition:0.3s all;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  content: "";
+  transition-duration: 0.3s;
+  top: 0.7rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: 0.3s all;
 }
 /*--------------------------------
  フッター
@@ -563,7 +555,7 @@ img {
   .header .container {
     padding: 35px 20px;
     justify-content: flex-start;
-    gap:5px;
+    gap: 5px;
   }
 
   .header-logo {
@@ -584,7 +576,6 @@ img {
     display: none;
   }
 
-  
   /*  メインビジュアル */
   .mv {
     height: 75vh;
@@ -688,7 +679,7 @@ img {
 
   .article-body h3 {
     font-size: 16px;
-    padding-left: .8em;
+    padding-left: 0.8em;
   }
 
   .article-body h3:not(:first-child) {
@@ -701,7 +692,7 @@ img {
     margin-bottom: 20px;
   }
 
-  .page-top:hover{
+  .page-top:hover {
     display: block;
     position: relative;
     width: 60px;
@@ -713,18 +704,50 @@ img {
     background-color: #fff;
   }
 
-  .page-top a:hover{
-    -webkit-transform: translate(-50%,-50%) rotate(
-      45deg);
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 16px;
-          height: 16px;
-          margin: 5px 0 0;
-          border-top: 2px solid #86868b;
-          border-left: 2px solid #86868b;
-          content: "";
+  .page-top a:hover {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 5px 0 0;
+    border-top: 2px solid #86868b;
+    border-left: 2px solid #86868b;
+    content: "";
+  }
+}
+
+/* CONTACT CTA */
+.contact-text {
+  margin-bottom: 24px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
+}
+@media screen and (max-width: 768px) {
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
   }
 }
