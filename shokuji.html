@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>食事|鬼怒川温泉旅館【公式】</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/shokuji.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/icon.ico" />
+<script type="text/javascript" src="js/jQuery3.5.1.js"></script>
+</head>
+	
+<body>
+	<div id="wrapper"><!--/wrapperここから-->
+
+	<header><!--/headerここから-->
+    	<a class="header_rogo" href="works2.html">
+                <img src="img/rogo.png" alt="ヘッダーロゴ" width="190" height="60">
+        </a>
+    <nav>
+            <ul>
+                <li><a href="works2.html">旅館について</a></li>
+                <li><a href="heya.html">客室</a></li>
+                <li><a href="shokuji.html">食事</a></li>
+                <li><a href="onsen.html">温泉</a></li>
+                <li><a href="works2.html #access">アクセス</a></li>
+                <li><a href="#">ご予約</a></li>
+            </ul>
+    </nav>
+    </header><!--/headerここまで-->
+		
+<main>
+	
+<div class="waku">
+	<h1>食事</h1>
+</div>
+	
+	<div class="top_img">
+		<img src="img/食事ALL_05.png" alt="料理の写真" width="1360" height="650">
+</div>    
+
+<div class="DINNER">
+	<h2>DINNER<br>夕食</h2>
+</div>
+ 
+    <section class="waku_dinner">
+    	<a href="#"><img class="dinnerimg" src="img/食事ALL_08.png" alt="夕食の写真" width="1000" height="500"></a>
+   		<h3>地元の食材を使用した四季折々のおもてなし</h3>
+    	<p>ディナーメニューは地元・栃木と日本各地の旬味を吟味しました。</p>
+        
+	</section>    
+
+
+
+	<div class="BREAKFAST">
+		<h2>BREAKFAST<br>朝食</h2>
+	</div>
+
+
+	<article class="waku_BREAKFAST">
+	<article class="nakami_bk">
+		<section class="breakfastimg1">        
+    		<div class="breakfastimg"><a href="#"><img src="img/食事ALL_12.png" alt="朝食和食の写真" width="400" height="400"></a></div>
+        	<h4><a href="#">和食</a></h4>
+		</section>
+	
+	<section class="breakfastimg2">              
+    	<div class="breakfastimg"><a href="#"><img src="img/食事ALL_14.png" alt="朝食洋食の写真" width="400" height="400"></a></div>
+    	<h4><a href="#">洋食</a></h4>
+	</section>  
+</article>
+</article>  
+    <h3>和食と洋食からお選び下さい。</h3>
+
+
+<div class="DINING">
+ <h2>DINING<br>食事処</h2>
+</div>
+
+<article class="waku_DINING">
+<article class="nakami_di">    
+    <section class="dining1">      
+   		<div class="dinigimg"><a href="#"><img src="img/食事ALL_19.png" alt="個室ダイニングの写真" width="400" height="300"></a></div>
+        <h5><a href="#">ダイニングKINUGAWA</a></h5>
+        <p>個室にてゆっくりお楽しみください。</p>
+	</section>    
+     
+	<section class="dining2">                 
+    	<div class="dinigimg"><a href="#"><img src="img/食事ALL_21.png" alt="部屋食の写真" width="400" height="300"></a></div>
+    	<h5><a href="#">お部屋食もご用意</a></h5>
+        <p>ゆったりとした優雅なひと時を。</p>
+    </section>
+</article>
+</article>
+
+</main>
+</div><!--/wrapperここまで-->
+
+<footer><!--/footerここから-->
+
+<div id="fot">
+	<a class="fot_rogo" href="works2.html">
+            <img src="img/rogo1.png" alt="ヘッダーロゴ" width="285" height="90">
+    </a>
+        <p>〒300-0000栃木県日光市鬼怒川温泉1000<br>
+            Tel.　01-2345-6789(9:00~19:00)</p>
+ 	<div class="fot_nav">
+        <ul>
+            <li class="owari"><a href="#">施設案内</a></li>
+            <li class="owari"><a href="#">周辺案内・観光</a></li>
+            <li class="owari"><a href="#">プライバシーポリシー</a></li>
+            <li class="owari"><a href="#">利用規約</a></li>
+            <li class="owari"><a href="#">お問い合わせ</a></li>
+        </ul>
+    </div>
+	<small class="copy">©2021 Kinugawa Onsen Ryokan.inc</small>
+</div>
+
+</footer><!--/footerここまで-->
+
+<script>
+function showElementAnimation() {
+
+  var element = document.getElementsByClassName('waku_dinner');
+  if(!element) return; 
+  
+  var showTiming = window.innerHeight > 768 ? 200 : 50; // 要素が出てくるタイミングはここで調整
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+
+  for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+      element[i].classList.add('is-show');
+    } else if(scrollY + windowH < elemY) {
+      // 上にスクロールして再度非表示にする場合はこちらを記述
+      element[i].classList.remove('is-show');
+    }
+  }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+
+
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,316 @@
+f@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	width:100%;
+	background-color: #F8F8F8;
+	}
+	
+#wrapper{
+	width:100%;
+	margin:0 auto;
+	}
+/*-----header-----*/
+header{
+	width:100%;
+	height:100px;
+	margin:0 auto;
+	display:flex;
+	padding-left:0;
+	position:fixed;
+	background-color:#F8F8F8;
+	top:0;
+	height:100px;
+	z-index:2;
+}
+.header_rogo{
+	height:100px;
+	width:320px;
+	background-color:#325A3C;
+}
+.header_rogo img{
+	position:relative;
+	top:20px;
+	left:30px;
+}
+nav{
+	text-align:center;
+	width:1200px;
+	height:60px;
+	margin-top:40px;
+}
+nav ul{
+	display:table;
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+nav li{
+	font-family:"游明朝","ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-size:18px;
+	list-style:none;
+	display:table-cell;
+	width:200px;
+	align-items:center;
+	}
+
+nav a{
+	display:block;
+	width:100%;
+	height:40px;
+	text-decoration:none;
+	color:#325A3C;
+	align-items:center;
+	padding-top:20px;
+}
+
+nav a:hover{
+	color:#978F10;
+	transition-duration:0.5s;
+}
+
+
+/*---headerここまで---*/
+body{
+	background-color:#F8F8F8;
+}
+main{
+	width:100%;
+	margin:0 auto;
+	
+	}
+.waku{
+	width:100%;
+	height: 60px;
+	background-color:#325A3C;
+	position:relative;
+	top:100px;
+
+}
+h1{
+	font-family:"游明朝";
+	font-size:24px;
+	color:#F8F8F8;
+	padding-left: 80px;
+	line-height:3rem;	
+	}
+
+.DINNER{
+	margin-top: 60px;
+	width:100%;
+	background-color:#978f10;
+	text-align:center;
+	line-height:1;
+	font-family:"游明朝";
+	font-size:50px;
+	color:#F8F8F8;
+	}
+
+.top_img{
+	margin: 0 auto;
+}
+h2{
+	padding:50px 0;
+}
+
+.waku_dinner{
+	padding-top:100px;
+	text-align:center;
+	margin:0 auto;
+	opacity: 0;
+  	visibility: hidden;
+  	transform: translateY(40px);
+  	transition: all 1s;
+	}
+	
+.waku_dinner.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+h3{
+	margin-top:60px;
+	text-align:center;
+	font-size:24px;
+	color:#325A3C;
+	font-family:"游明朝";
+}
+		
+
+.waku_dinner p{	line-height:4em;
+	text-align:center;
+	font-size:15px;
+	color:#333333;
+	font-family:"游明朝";
+		}
+
+
+
+
+.BREAKFAST{
+	margin-top:60px;
+	margin-bottom:60px;
+	width:100%;
+	background-color:#978f10;
+	text-align:center;
+	line-height:1;
+	font-family:"游明朝";
+	font-size:50px;
+	color:#F8F8F8;
+	}
+	
+.waku_BREAKFAST{
+	text-align:center;
+	margin:0 auto;
+	border:1px solid #978F10;
+	width:1000px;
+	height:500px;
+}
+
+
+.nakami_bk{
+	height:500px;
+	padding-top:10px;
+	margin:0 auto;
+	padding-left:50px;
+	display:flex;
+	align-items:center;
+}
+.breakfastimg1{
+	
+}
+.breakfastimg2{
+	padding-left:100px;
+	
+	}
+.breakfastimg:hover{
+	transform:scale(1.1);
+	transition-duration:0.5s;
+}
+
+h4{
+	line-height:3em;
+	text-align:center;
+	font-size:24px;
+	color:#333333;
+	font-family:"游明朝";
+}
+	
+h4 a{
+	text-decoration: none;
+	color:#325A3C;
+}	
+
+h4 a:hover{	
+	color:#978F10;
+	transition-duration:0.5s;
+}
+.DINING{
+	margin-top:60px;
+	margin-bottom:60px;
+	width:100%;
+	background-color:#978f10;
+	text-align:center;
+	line-height:1;
+	font-family:"游明朝";
+	font-size:50px;
+	color:#F8F8F8;	
+}
+	
+	
+.waku_DINING{
+	text-align:center;
+	margin:0 auto;
+	border:1px solid #978F10;
+	width:950px;
+	height:450px;
+	margin-bottom: 60px;
+}
+
+.nakami_di{
+	margin-top:30px;
+	padding-left:50px;
+	display:flex;
+}
+	
+.dining2{
+	padding-left:50px;
+	}	
+	
+.dinigimg:hover{
+	transform:scale(1.1);
+	transition-duration:0.5s;
+}
+
+h5{		
+	margin-top:30px;
+	text-align:center;
+	font-size:24px;
+	color:#325A3C;
+	font-family:"游明朝";
+}
+h5 a{
+	text-decoration: none;
+	color:#325A3C;
+}	
+h5 a:hover{	color:#978F10;
+	transition-duration:0.5s;
+}
+
+.waku_DINING p{	line-height:4em;
+	text-align:center;
+	font-size:15px;
+	color:#333333;
+	font-family:"游明朝";
+		}
+
+/*---footer---*/
+footer{
+		
+	
+	background-color:#325A3C;
+		text-align:center;
+		color:#f8f8f8;
+		padding:30px 0 20px 0;
+		font-size:14px;
+		font-family:"游明朝","ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+
+#fot{
+	
+	    width:1200px;
+		margin:0 auto;
+		padding:0;
+		width:100%;
+
+}
+#fot p{
+	margin-top:15px;
+	line-height:1.5rem;
+	color:#f8f8f8;
+}
+.fot_nav ul{
+		display:table;
+		margin:50px auto 70px auto;
+		padding:0;
+		width:40%;
+}
+
+.fot_nav li{
+	display:table-cell;
+	align-items:center;
+}	
+.fot_nav li a{
+	color:#f8f8f8;
+	line-height:1.5rem;
+	align-items:center;
+}	
+	
+	
+	
+	
+	
+	
+	
+	

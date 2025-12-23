@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	width:100%;
+	background-color:#F8F8F8;
+}
+
+
+/*-----header-----*/
+header{
+	width:100%;
+	height:100px;
+	margin:0 auto;
+	display:flex;
+	padding-left:0;
+	position:fixed;
+	background-color:#F8F8F8;
+	top:0;
+	height:100px;
+	z-index:2;
+}
+.header_rogo{
+	height:100px;
+	width:320px;
+	background-color:#325A3C;
+}
+.header_rogo img{
+	position:relative;
+	top:20px;
+	left:30px;
+}
+header nav{
+	text-align:center;
+	width:1200px;
+	height:60px;
+	margin-top:40px;
+}
+header nav ul{
+	display:table;
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+header nav li{
+	font-family:"游明朝","ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-size:18px;
+	list-style:none;
+	display:table-cell;
+	width:200px;
+	align-items:center;
+	}
+
+header nav a{
+	display:block;
+	width:100%;
+	height:40px;
+	text-decoration:none;
+	color:#325A3C;
+	align-items:center;
+	padding-top:20px;
+}
+
+header nav a:hover{
+	color:#978F10;
+	transition-duration:0.5s;
+}
+
+/*-----main-----*/
+main{
+	width:100%;
+	margin:0 auto;
+}
+
+.main{
+	text-align:center;
+	position:relative;
+	top:100px;
+}
+
+#vegas{
+	display: block;
+	width:90svw;
+	height:100vh;
+	margin:0 auto;
+
+}
+
+#top{
+	text-align:center;
+	margin:0 auto;
+	margin-top:250px;
+}
+
+#top:hover{
+	opacity:0.5;
+	cursor: pointer;
+}
+
+#top:active{
+	position: relative;
+	top: 3px;
+}
+
+h1{
+	font-family:游明朝;
+	font-size:50px;
+	color:#978F10;
+	text-align:center;
+	margin-top:150px;
+}
+
+.text{
+	font-family:游明朝;
+	font-size:24px;
+	color:#978F10;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:30px;
+}
+
+
+h2{
+	font-family:游明朝;
+	font-size:15px;
+	margin-top:25px;
+	line-height:2em;
+}
+#tag{
+	margin-top:90px;
+	padding:40px;
+	text-align:center;
+
+}
+#tag2{
+	margin:0 auto;
+	margin-top:80px;
+	width:172px;
+	height: 58px;
+	
+}
+
+#tag2:hover{
+	opacity:0.5;
+	cursor: pointer;
+}
+
+#tag2:active{
+	position: relative;
+	top: 3px;
+}
+
+.accesstext{
+	width:20%;
+	margin:0 auto;
+}
+h3{
+	font-family:游明朝;
+	font-size:50px;
+	color:#978F10;
+	margin:0 auto;
+	text-align:center;
+}
+.text2{
+	font-family:游明朝;
+	font-size:24px;
+	color:#978F10;
+	padding-top:10px;
+	margin:0 auto;
+	text-align:center;
+	}
+
+.slider li:hover{
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+.slider li a{
+	text-decoration:none;
+	color: black;
+}
+#map{
+	margin-top:80px;
+}
+
+#map2{
+	margin-top:50px;
+	margin-left:10px;
+}
+#map3{
+	margin-top:50px;
+	margin-left:10px;
+}
+
+.map{
+	display:flex;
+	margin-bottom:100px;
+}
+
+
+#line{
+	margin-left:20px;
+	margin-top:75px;
+}
+
+.info{
+	margin:0 auto;
+}
+.access{
+	width:70%;
+	margin:0 auto;
+}
+#access{
+	padding-top:150px;
+	}
+/*---footer---*/
+footer{
+		background-color:#325A3C;
+		text-align:center;
+		color:#f8f8f8;
+		padding:30px 0 20px 0;
+		font-size:14px;
+		font-family:"游明朝","ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+
+#fot{
+	    width:1200px;
+		margin:0 auto;
+		padding:0;
+		width:100%;
+
+}
+#fot p{
+	margin-top:15px;
+	line-height:1.5rem;
+}
+.fot_nav ul{
+		display:table;
+		margin:50px auto 70px auto;
+		padding:0;
+		width:40%;
+}
+
+.fot_nav li{
+	display:table-cell;
+	align-items:center;
+}	
+.fot_nav li a{
+	color:#f8f8f8;
+	line-height:1.5rem;
+	align-items:center;
+}

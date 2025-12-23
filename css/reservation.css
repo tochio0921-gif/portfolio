@@ -1,0 +1,433 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	width:100%;
+	height:100%;
+}
+
+
+/*header*/
+header{
+	width:100%;
+	height:165px;
+	margin:0 auto;
+	display:flex;
+	padding-left:0;
+	position:fixed;
+	top:0;
+	z-index:2;
+}
+#box{
+	position:absolute;
+	left:175px;
+	top:5px;
+
+}
+.header_rogo{
+	height:80px;
+	width:350px;
+}
+.header_rogo img{
+	position:relative;
+	top:70px;
+	left:30px;
+    opacity:1;
+	transition: .3s ease-in-out;
+}
+.header_rogo img:hover{
+	opacity:.5;
+}
+header nav{
+    font-family: 'Josefin Sans', sans-serif;
+	text-align:center;
+	width:550px;
+	height:40px;
+	margin:80px 0 0 200px;
+    padding-left: 200px;
+}
+
+.gnavi{
+    display: flex;
+    flex-wrap: wrap;
+    margin:30px 0 0 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.gnavi li{
+	font-family:"Josefin Sans","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:16px;
+	margin-bottom:10px;
+	}
+	
+.sns_icon{
+  margin-top:60px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align:right;
+}
+
+.sns_icon img{
+	opacity:1;
+	transition: .3s ease-in-out;
+}
+
+.sns_icon a:hover img{
+	opacity:.5;
+}
+
+.gnavi li a{
+	position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+	color:#19749E;
+}
+
+.gnavi li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:#0481A2;
+    transition: all .6s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);
+}
+
+
+/*menu*/
+.menu{
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 99;
+	position:fixed;
+}
+.menu__line{
+    background: #19749E;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+}
+.menu__line--center{
+    top: 9px;
+}
+.menu__line--bottom{
+    bottom: 0;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);
+}
+
+/*gnav*/
+.gnav{
+    background: rgba(0,0,0,0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.gnav__menu__item{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 40px 0;
+}
+.gnav__menu__item a{
+    color: #fff;
+    font-size: 2em;
+    padding: 40px;
+    text-decoration: none;
+    transition: .5s;
+}
+.gnav__menu__item a:hover{
+    color: #19749E;
+}
+.hero{
+    background:url(img/hero.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+	padding-top:200px;
+}
+.sns_icon_gnav{
+	display:flex;
+	gap:20px;
+}
+.sns_icon_gnav img{
+	opacity:1;
+	transition: .3s ease-in-out;
+}
+.sns_icon_gnav img:hover{
+	opacity:.5;
+}
+
+
+
+#wrapper{
+	position: relative;
+    min-height: 100%;
+	margin:0 auto;
+}
+/*========= レイアウトのためのCSS ===============*/
+
+.bgextend{
+	width: 1618px;
+	height:100vh;
+	box-sizing:border-box;
+}
+
+/*背景色が伸びて出現 共通*/
+.bgextend{
+  animation-name:bgextendAnimeBase;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  position: relative;
+  overflow: hidden;/*　はみ出た色要素を隠す　*/
+  opacity:0;
+}
+
+@keyframes bgextendAnimeBase{
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;  
+}
+}
+
+/*中の要素*/
+.bgappear{
+  animation-name:bgextendAnimeSecond;
+  animation-duration:1s;
+  animation-delay: 0.6s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes bgextendAnimeSecond{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
+/*--------- 右から --------*/
+.bgRLextend::before{
+  animation-name:bgRLextendAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #19749E;/*伸びる背景色の設定*/
+}
+@keyframes bgRLextendAnime{
+  0% {
+    transform-origin:right;
+    transform:scaleX(0);
+  }
+  50% {
+    transform-origin:right;
+    transform:scaleX(1);
+  }
+  50.001% {
+    transform-origin:left;
+  }
+  100% {
+    transform-origin:left;
+    transform:scaleX(0);
+  }
+}
+
+
+
+
+/*main*/
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+main{
+	margin:0 auto;
+	padding-top:75px;
+}
+
+#contents{
+	padding-bottom: 40px;
+}
+
+section{
+	max-width: 1200px;
+    margin: 0 auto;
+	padding: 0 40px;
+}
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+	font-size:28px;
+	padding-bottom:60px;
+}
+
+.reservation_section{
+  justify-content: space-between;
+  padding-bottom: 50px;
+  width:750px;
+  margin:0 auto;
+}
+
+.reservation_body{
+	padding-top:90px;
+	padding-bottom:200px;
+	height:400px;
+	width:450px;
+	margin:0 auto;
+}
+
+.reservation_container{
+	display:flex;
+	padding-bottom:60px;
+}
+
+.reservation_text{
+  font-family: 'Noto Sans JP', sans-serif;
+	font-size:12px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.reservation_body p{
+  font-family: 'Noto Sans JP', sans-serif;
+	font-size:16px;
+	width:450px;
+	text-align:center;
+	line-height:4;
+}
+
+.reservation_body p a{
+	text-decoration: none;
+	color:#000;
+}
+
+.menu_container{
+	height:310px;
+	width: 700px ;
+	margin:0 auto;
+}
+
+.btnlinestretches2{
+    /*線の基点とするためrelativeを指定*/
+	position:relative;
+    /*ボタンの形状*/  
+	color:#333;
+    padding: 10px 30px;
+	display:inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+/*線の設定*/
+.btnlinestretches2::before,
+.btnlinestretches2::after {
+	content:'';
+    /*絶対配置で線の位置を決める*/
+	position:absolute;
+    /*事前に出現させる線の形状*/
+	border:solid #333;
+	width:10px;
+	height:10px;
+    /*アニメーションの指定*/
+	transition:all 0.3s ease-in-out;
+}
+
+.btnlinestretches2::before{
+    /*事前に出現させる線の位置*/
+	top:0;
+	left:0;
+    /*事前に出現させる線の形状*/
+	border-width:2px 0 0 2px;
+}
+
+.btnlinestretches2::after{
+    /*事前に出現させる線の位置*/
+	bottom:0;
+	right:0;
+    /*事前に出現させる線の形状*/
+	border-width:0 2px 2px 0;
+}
+
+/*hoverした際の線の形状*/
+.btnlinestretches2:hover::before,
+.btnlinestretches2:hover::after{
+	width:calc(100% - 2px);
+	height:calc(100% - 2px);
+	border-color:#666
+}
+
+/* footer */
+.footer {
+    padding: 40px;
+	background-color:#19749E;
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+#box4{
+	position:absolute;
+	left:175px;
+	top:2px;
+}
+.footer_rogo img{
+	margin-bottom:20px;
+}
+.copyright{
+    font-family: 'Josefin Sans', sans-serif;
+	color:#FFFFFF
+}

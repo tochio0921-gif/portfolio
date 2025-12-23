@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>温泉|鬼怒川温泉旅館【公式】</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/onsen.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/icon.ico" />
+<script type="text/javascript" src="js/jQuery3.5.1.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper"><!--/wrapperここから-->
+
+	<header><!--/headerここから-->
+    	<a class="header_rogo" href="works2.html">
+                <img src="img/rogo.png" alt="ヘッダーロゴ" width="190" height="60">
+        </a>
+    <nav>
+            <ul>
+                <li><a href="works2.html">旅館について</a></li>
+                <li><a href="heya.html">客室</a></li>
+                <li><a href="shokuji.html">食事</a></li>
+                <li><a href="onsen.html">温泉</a></li>
+                <li><a href="works2.html #access">アクセス</a></li>
+                <li><a href="#">ご予約</a></li>
+            </ul>
+    </nav>
+    </header><!--/headerここまで-->
+
+
+<main>
+
+	<div class="obi">
+	<h1>温泉</h1>
+   	</div>
+    
+   <p><img src="img/onsen_1.png" alt="温泉" width="1360" height="650"></p>
+    
+
+    
+    <div class="main_text">
+    	<h2>温泉の泉質・効能</h2>
+        <p class="text1">鬼怒川温泉はいまから300年以上も昔の江戸時代・元禄4年（1691年）に<br>
+発見されました。当時は日光神領であったため、日光詣をした大名や僧侶たち<br>
+だけが利用していたといいます。<br>
+泉質はアルカリ性単純温泉。無色透明、無味無臭の肌にやさしい温泉です。<br>
+近代になって神経痛やリウマチに効く温泉として「滝の湯」の名で親しまれ、<br>
+昭和2年に鉄道が開通するや鬼怒川温泉として発展してきました。</p>
+
+		<p class="text2">
+        【泉質】アルカリ性単純温泉　　　【効能】神経痛・くじき・筋肉痛・関節痛など</p>
+        
+        <img src="img/border_03.png"  alt="ボーダー" width="26" height="225"> 
+    </div>
+    
+
+
+    
+    
+    
+    <div class="item_box">
+    
+    	<div class="onsen">
+        	<img src="img/onsen_2.png"  alt="温泉" width="725" height="290">
+       
+         
+        
+        	<div class="onsen_text">
+        		<h3>大浴場</h3>
+        		<P>広々とした浴室で心と体を<br>解放させるひととき。</P>
+        	</div>
+            
+         </div>
+        
+      
+        
+        <div class="onsen">
+        	<div class="onsen_text2">
+        		<h3>露天風呂</h3>
+        		<P>新緑や紅葉にかこまれ<br>疲れを癒す森林浴。</P>
+        	</div>
+        
+       
+        	<img src="img/onsen_3.png" alt="露天風呂" width="725" height="290">
+        </div>
+        
+        
+        <div class="onsen">
+        	<img src="img/onsen_4.png" alt="温泉" width="725" height="290">
+        
+        	<div class="onsen_text">
+        		<h3>客室風呂</h3>
+        		<P>自分だけの温泉を楽しむ<br>至福の時間。</P>
+        	</div>
+        
+     </div>
+    
+    
+
+
+</main>
+
+
+</div><!--/wrapperここまで-->
+
+
+
+
+
+
+
+
+
+<footer><!--/footerここから-->
+
+<div id="fot">
+	<a class="fot_rogo" href="works2.html">
+            <img src="img/rogo1.png" alt="ヘッダーロゴ" width="285" height="90">
+    </a>
+        <p>〒300-0000栃木県日光市鬼怒川温泉1000<br>
+            Tel.　01-2345-6789(9:00~19:00)</p>
+ 	<div class="fot_nav">
+        <ul>
+            <li class="owari"><a href="#">施設案内</a></li>
+            <li class="owari"><a href="#">周辺案内・観光</a></li>
+            <li class="owari"><a href="#">プライバシーポリシー</a></li>
+            <li class="owari"><a href="#">利用規約</a></li>
+            <li class="owari"><a href="#">お問い合わせ</a></li>
+        </ul>
+    </div>
+	<small class="copy">©2021 Kinugawa Onsen Ryokan.inc</small>
+</div>
+
+</footer><!--/footerここまで-->
+
+<script>
+function showElementAnimation() {
+
+  var element = document.getElementsByClassName('main_text');
+  if(!element) return; // 要素がなかったら処理をキャンセル
+  
+  var showTiming = window.innerHeight > 768 ? 200 : 40; // 要素が出てくるタイミングはここで調整
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+
+  for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+      element[i].classList.add('is-show');
+    } else if(scrollY + windowH < elemY) {
+      // 上にスクロールして再度非表示にする場合はこちらを記述
+      element[i].classList.remove('is-show');
+    }
+  }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+
+
+</script>
+
+
+</body>
+</html>
